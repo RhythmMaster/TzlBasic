@@ -1,0 +1,89 @@
+//
+//  PrefixHeader.pch
+//  TzlBasicProject
+//
+//  Created by TangZhengLiang on 16/6/24.
+//  Copyright © 2016年 TangZhengLiang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+
+#import "Constants.h"
+
+//网络请求接口
+#import "RequestPaths.h"
+
+#import <YYKit.h>
+
+//分类方面
+#import "NSString+ToURL.h"
+#import "NSObject+ParseJSON.h"
+#import "NSObject+NetWorking.h"
+#import "UIView+HUD.h"
+#import "UIView+TZLFrame.h"
+#import "UITextField+TZLShake.h"
+
+//网络方面
+#import <AFNetworking.h>
+#import <UIKit+AFNetworking.h>
+//刷新方面
+#import <MJRefresh.h>
+//页面提示刷新功能
+#import <MBProgressHUD.h>
+#import <SVProgressHUD.h>
+
+//3D切换
+#import <iCarousel.h>
+
+//视图切换控制
+#import <WMPageController.h>
+
+//方法触发方面
+#import <BlocksKit.h>
+#import <BlocksKit+UIKit.h>
+#import <BlocksKit+MessageUI.h>
+
+
+//登录方面
+#import <BmobSDK/Bmob.h>
+
+#import <PSCollectionView.h>
+
+//布局方面
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+#import <UITableView+FDTemplateLayoutCell.h>
+
+//侧边栏
+#import <RESideMenu.h>
+
+//图片浏览
+#import <MWPhotoBrowser.h>
+
+//图片处理方面
+#import <SDImageCache.h>
+#import <UIImageView+WebCache.h>
+#import <UIImageView+AFNetworking.h>//没有用过
+#import <UIImageView+HighlightedWebCache.h>//没有用过
+
+//界面滑动方面
+#import <MLTransition.h>
+
+//归档
+#import <MJExtension.h>
+
+//打印错误
+#import <CocoaLumberjack.h> //优秀的替换NSLog的第三方，更加省资源，并且可以定义打印级别
+#ifdef DEBUG
+static const int ddLogLevel = DDLogLevelVerbose;
+#else
+static const int ddLogLevel = DDLogLevelError;
+#endif
+
+
+#endif /* PrefixHeader_pch */
